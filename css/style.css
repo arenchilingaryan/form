@@ -1,0 +1,286 @@
+body {
+    background-color: #00BFFF;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container {
+    width: 400px;
+    position: absolute;
+    left: 30%;
+    top:20%;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #2ecc71;
+    transition: 1s;
+}
+.container h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    color:rgba(255, 255, 255, .9);
+    text-align: center;
+    border:2px solid rgba(255, 255, 255, .9);
+    padding: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    border-left:none;
+    border-right:none;
+}
+.username {
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    border: 2px solid #00BFFF;
+    background-color: rgba(0, 0, 0, .7);
+    color:rgba(255, 255, 255, .9);
+    border-radius: 24px;
+    transition: 0.25s;
+    font-size: 20px;
+    outline: none;
+
+}
+.username:focus {
+    width: 250px;
+    border: 2px solid #2ecc71;
+}
+.username:focus ~.c {
+    width: 0;
+    height: 0;
+    border: 1px solid transparent;
+    border-right: none;
+    border-bottom: none;
+    transition: 0.5s;
+}
+.username:focus ~.d {
+    width: 0;
+    height: 0;
+    border: 1px solid transparent;
+    border-left:none;
+    border-bottom: none;
+    transition: .5s;
+}
+.username:focus ~.a {
+    left:0;
+    top:0;
+    width: 230px;
+    height: 200px;
+    border-color:#40ff40;
+    transition: .5s;
+}
+.username:focus ~.b {
+    right:0;
+    top:0;
+    width: 230px;
+    height: 200px;
+    border-color:#40ff40;
+    
+    transition: .5s;
+}
+.password {
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    border: 2px solid #00BFFF;
+    background-color: rgba(0, 0, 0, .7);
+    color:rgba(255, 255, 255, .9);
+    border-radius: 24px;
+    transition: 0.25s;
+    font-size: 20px;
+    outline: none;
+
+}
+.password:focus {
+    width: 250px;
+    border: 2px solid #2ecc71;
+}
+.password:focus ~.a {
+    width: 0;
+    height: 0;
+    border: 1px solid transparent;
+    border-right: none;
+    border-bottom: none;
+    transition: 0.5s;
+}
+.password:focus ~.b {
+    width: 0;
+    height: 0;
+    border: 1px solid transparent;
+    border-left:none;
+    border-bottom: none;
+    transition: .5s;
+}
+.password:focus ~.c {
+    bottom:0;
+    right:0;
+    width: 230px;
+    height: 200px;
+    border-color:#40ff40;
+    border-right: 4px solid #40ff40;
+    border-left: none;
+    transition: .5s;
+}
+.password:focus ~.d {
+    bottom: 0;
+    left:0;
+    width: 230px;
+    height: 200px;
+    border-color:#40ff40;
+    border-left: 4px solid #40ff40;
+    border-right: none;
+    transition: .5s;
+}
+.button {
+    margin:10px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border: 2px solid #ffd800;
+    border-radius: 24px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    font-weight: 700;
+    transition: .25s;
+    outline: none;
+}
+
+
+.button:hover{
+    width: 150px;
+    background-color: #2ecc71;
+    border:none;
+    color:black;
+}
+.bord {
+    position: absolute;
+}
+.a {
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border:4px solid rgba(255, 255, 255, .9);
+    border-right:none;
+    border-bottom: none;
+    transition: .5s;
+}
+.b {
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border:4px solid rgba(255, 255, 255, .9);
+    border-left: none;
+    border-bottom:none;
+    transition: .5s;
+ }
+.c {
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    border:4px solid rgba(255, 255, 255, .9);
+    border-left: none;
+    border-top:none;
+    transition: .5s;
+}
+.d {
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    border:4px solid rgba(255, 255, 255, .9);
+    border-right: none;
+    border-top:none;
+    transition: .5s;
+}
+a{
+    color: #00BFFF;
+    padding: 5px;
+}
+.active {
+    border-radius: 0px;
+}
+.activeBord1 {
+    left:22%;
+    top:17%;
+    border-color: #00BFFF;
+}
+.activeBord2 {
+    right:22%;
+    top:17%;
+    border-color: #00BFFF;
+
+}
+.activeBord3 {
+    right:22%;
+    bottom:75%;
+    border-right:transparent;
+    border-left: 4px solid rgba(255, 255, 255, .9);
+    border-color:#2ecc71;
+}
+.activeBord4 {
+    left:22%;
+    bottom:75%;
+    border-left:transparent;
+    border-right: 4px solid rgba(255, 255, 255, .9);
+    border-color:#2ecc71;
+
+}
+.bordColor1 {
+    border-color: #ffd800;
+}
+.bordColor2 {
+    border-color: #ffd800;
+}
+.bordColor3 {
+    border-color: #40E0D0;
+}
+.bordColor4 {
+    border-color: #40E0D0;
+}
+.content {
+    border-radius: 100px;
+    transition: 1s;
+}
+.btnColor {
+    width: 150px;
+}
+.bordType1 {
+    left:8%;
+    top:27%;
+    width: 70px;
+    height: 70px;
+    border-color: #8b00ff;
+}
+.bordType2 {
+    width: 70px;
+    height: 70px;
+    right:8%;
+    top:27%;
+    border-color: #8b00ff;
+}
+.bordType3 {
+    width: 70px;
+    height: 70px;
+    right:8%;
+    bottom:55%;
+    border-color: #0069ff;
+}
+.bordType4 {
+    left:8%;
+    bottom:55%;
+    width: 70px;
+    height: 70px;
+    border-color: #0069ff;
+}
+.content2 {
+    border-radius: 300px;
+    background-color: rgba(0, 0, 0);
+    border: 4px solid #8b00ff;
+}
